@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+</head>
+<body>
+    <h1>Fill the fields</h1>
+    <form method="POST" action="https://formspree.io/diesel6@i.ua">
+        <p>Sex</p>
+        <label for="sex">Male</label>
+        <input type="radio" name="yesorno" value>
+        <label for="sex">Female</label>
+        <input type="radio" name="yesorno" value><br>
+        
+        <p>How old are you: </p>
+        <input type="number" min="18" max="60"><br>
+        
+        <label for="name">Enter your name: </label>
+        <input type="text" name="user-name" placeholder="-->Your name" required><br>
+        <label for="surname">Enter your surname: </label>
+        <input type="text" name="user-surname" placeholder="-->Your surname" required><br>
+        <label for="email">Enter your email: </label>
+        <input type="email" name="user-email" placeholder="-->Your email" required><br>
+        
+        <p>From what part of the world are you from</p>
+        <select>
+            <option value="Europe">Europe</option>
+            <option value="Asia">Asia</option>
+            <option value="North America">North America</option>
+            <option value="South America">South America</option>
+            <option value="Europe">Europe</option>
+        </select><br>
+        
+        <p>What do you interested in?</p><br>
+        <input type="checkbox" name="">Sport
+        <input type="checkbox" name="">Science
+        <input type="checkbox" name="">Art
+        <input type="checkbox" name="">Else
+        
+        <input type="submit" name="Send">
+    </form>
+</body>
+</html>
