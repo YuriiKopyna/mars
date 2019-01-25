@@ -10,37 +10,36 @@
     <h1>Fill the fields</h1>
     <form method="POST" action="https://formspree.io/diesel6@i.ua">
         <p>Sex</p>
-        <label for="sex">Male</label>
-        <input type="radio" name="yesorno" value>
-        <label for="sex">Female</label>
-        <input type="radio" name="yesorno" value><br>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="sex" value="male">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="sex" value="female"><br>
         
         <p>How old are you: </p>
-        <input type="number" min="18" max="60"><br>
+        <input type="number" min="18" max="60" name="age"><br>
         
         <label for="name">Enter your name: </label>
-        <input type="text" name="user-name" placeholder="-->Your name" required><br>
+        <input type="text" id="name" name="user-name" placeholder="-->Your name" required><br>
         <label for="surname">Enter your surname: </label>
-        <input type="text" name="user-surname" placeholder="-->Your surname" required><br>
+        <input type="text" id="surname" name="user-surname" placeholder="-->Your surname" required><br>
         <label for="email">Enter your email: </label>
-        <input type="email" name="user-email" placeholder="-->Your email" required><br>
+        <input type="email" id="email" name="user-email" placeholder="-->Your email" required><br>
         
         <p>From what part of the world are you from</p>
-        <select>
+        <select name="region">
             <option value="Europe">Europe</option>
             <option value="Asia">Asia</option>
             <option value="North America">North America</option>
             <option value="South America">South America</option>
-            <option value="Europe">Europe</option>
         </select><br>
         
         <p>What do you interested in?</p><br>
-        <input type="checkbox" name="">Sport
-        <input type="checkbox" name="">Science
-        <input type="checkbox" name="">Art
-        <input type="checkbox" name="">Else
+        <input type="checkbox" name="Interests" value="Sport">Sport
+        <input type="checkbox" name="Interests" value="Science">Science
+        <input type="checkbox" name="Interests" value="Art">Art
+        <input type="checkbox" name="Interests" value="Else">Else
         
-        <input type="submit" name="Send">
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
